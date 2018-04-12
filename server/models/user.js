@@ -9,14 +9,14 @@ var User = mongoose.model('User', {
   }
 });
 
-var newUser = new User({
-  email: 'kristjan@gmail.com'
-});
-
-newUser.save().then((userInfo) => {
-  console.log('New user was created', userInfo);
-}).catch((e) => {
-  console.log('Failed to create user', e);
-});
+// var newUser = new User({
+//   email: 'kristjan@gmail.com'
+// });
+//
+// newUser.save().then((userInfo) => {
+//   console.log('New user was created', userInfo);
+// }).catch((e) => {
+//   console.log('Failed to create user', e);
+// });
 
 module.exports = {User};
